@@ -20,7 +20,7 @@ border-radius:hover{
 header
 {
 /*transition:width 1s;*/
-font-family:cursive;
+/*font-family:cursive;*/
   background: #383c42;
   text-align: center;
   padding:15px;
@@ -53,11 +53,21 @@ nav a{
   border-radius:10px;
 }
 footer{
-  font-family:cursive;
+  /*font-family:cursive;*/
   background: #383c42;
   text-align: center;
   color:#FBFBFB;
   clear:both;
+}
+img{
+  background: #383c42;
+  border-radius:50%;
+  border-style:double;
+  transition: background-color border-radius 1s;
+}
+img:hover{
+  background: #FFFFFF;
+  border-radius:0%;
 }
 .copyright{
   font-family: monospace;
@@ -70,11 +80,8 @@ footer{
     transform: rotate(360deg);
 }
 section{
-  font-family:cursive;
+  /*font-family:cursive;*/
   color:#FFBBFF;
-  width:30%;
-  display:inline-block;
-  float:left;
   marign-right:5%;
   /*transition: width 1s;*/
 }
@@ -107,4 +114,11 @@ ul
 }
 .special{
   background:#BBBFFF;
+}
+@media screen and (min-width:800px){
+  section{
+    width:30%;
+    display:inline-block;
+    float:left;
+  }
 }
